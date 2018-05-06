@@ -147,7 +147,7 @@ interval_full <- data_full %>%
 
 ## Here is the Panel plot comparing the average number of steps taken per 5-minute interval across weekdays and weekends
 
-
+```{r}
 s <- ggplot(interval_full, aes(x=interval, y=steps, color = weektype)) +
   geom_line() +
   facet_wrap(~weektype,ncol=1,nrow=2)
