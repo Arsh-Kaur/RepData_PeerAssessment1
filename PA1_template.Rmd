@@ -61,7 +61,7 @@ activity_steps_day <- aggregate(steps ~ date, data = activity, FUN = sum, na.rm 
 ```{r}
 hist(activity_steps_day$steps, xlab = "Steps per Day", main = "Total number of steps taken per day", col = "red")
 ```
-![Sample panel plot](instructions_fig/total_steps_per_day.png)
+![Sample panel plot](instructions_fig/total_steps.png)
 
 
 ## Mean and median of the total number of steps taken per day
@@ -83,7 +83,7 @@ median_steps
 activity_steps_mean <- aggregate(steps ~ interval, data = activity, FUN = mean, na.rm = TRUE)
 plot(activity_steps_mean$interval, activity_steps_mean$steps, type = "l", col = "blue", xlab = "Intervals", ylab = "Total steps per interval", main = "Number of steps per interval (averaged) (NA removed)")
 ```
-![Sample panel plot](instructions_fig/total_steps_NA_replaced.png)
+![Sample panel plot](instructions_fig/steps(NA_removed).png)
 
 
 ## Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -125,7 +125,7 @@ hist(sum_data$total,
      ylim=c(0, 30), 
      main="Histogram of the total number of steps taken each day\n(NA replaced by mean value)")
 ```     
-
+![Sample panel plot](instructions_fig/total_steps_per_day(NA_removed).png)
 
 ## The mean and median are computed like
 
